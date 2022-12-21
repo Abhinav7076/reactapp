@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState, useEffect} from 'react'
+import Card from './components/card'
+import axios from 'axios'
 
-function App() {
+const App = () => {
+  const [datag, setData] = useState([])
+
+  useEffect(() => {
+    axios.get('https://media-content.ccbp.in/website/react-assignment/resources.json')
+    .then(res=>{
+      setData(res.data)
+      console.log(datag)
+    })
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className="container mt-5 mb-3">
+      <div className="row">
+          {datag.map(element=>{
+            return <Card key={element.id} icon_url={element.icon_url} title={element.title} category={element.category} link={element.link} description={element.description} />
+          })}
+      </div>
     </div>
-  );
+    </>
+  )
 }
 
-export default App;
+export default App
