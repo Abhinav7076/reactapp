@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import Card from './components/Card'
+import Bar from './components/Bar'
+import Navbar from './components/Navbar'
 import axios from 'axios'
 
 const App = () => {
@@ -15,6 +17,8 @@ const App = () => {
 
   return (
     <>
+    <Navbar /><br></br><br></br>
+    <Bar />
     <div className="container mt-5 mb-3">
       <div className="row">
           {datag.map(element=>{

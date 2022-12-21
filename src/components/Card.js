@@ -14,7 +14,7 @@ const Card = (props) => {
                             <div className="d-flex justify-content-between">
                                 <div className="d-flex flex-row align-items-center">
                                     <div> <img className="icon" src={props.icon_url}></img> </div>
-                                    <div className="ms-2 c-details">
+                                    <div className="ms-4 c-details">
                                         <h6 className="mb-0">{props.title}</h6> <span className='text2'>{props.category}</span>
                                     </div>
                                 </div>
