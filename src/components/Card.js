@@ -1,5 +1,5 @@
 import React from 'react'
-import './card.css'
+import './style.css'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 const Card = (props) => {
