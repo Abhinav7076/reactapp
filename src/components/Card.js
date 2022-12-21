@@ -20,8 +20,8 @@ const Card = (props) => {
                                 </div>
                             </div>
                             <div className="mt-5">
-                                <a href={props.link} className="card-link">{props.link}</a>
-                                <p className="heading text2">{props.description}</p>
+                                <a href={props.link} className="card-link" style={{textDecoration: 'none'}}>{props.link}</a>
+                                <p style={{height: '1.5em', marginTop: '0.5em'}} className="heading text2">{props.description}</p>
                                 
                             </div>
     
