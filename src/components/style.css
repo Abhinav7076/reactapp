@@ -30,3 +30,10 @@ body {
 a {
     cursor: pointer;
 }
+
+.bar {
+    border: 1px solid silver;
+    background-color: #f2f4f7;
+    border-radius: 7px;
+    font-weight: 500;
+}
