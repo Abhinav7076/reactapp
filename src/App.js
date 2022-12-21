@@ -8,7 +8,7 @@ import { Button } from 'bootstrap'
 
 const App = () => {
   const [datag, setData] = useState([])
-  const [tag, setTag] = useState('request')
+  const [tag, setTag] = useState('resources')
 
   useEffect(() => {
     axios.get('https://media-content.ccbp.in/website/react-assignment/resources.json')
@@ -26,7 +26,7 @@ const App = () => {
 
   return (
     <>
-    <Navbar /><br></br><br></br>
+    <Navbar /><hr/><br/>
     <Bar changeTag={handleClick} />
     <div className="container mt-5 mb-3">
       <div className="row">

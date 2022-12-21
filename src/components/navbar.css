@@ -1,0 +1,20 @@
+
+
+.main-nav {
+    height: 4em;
+    background-color: white;
+}
+
+.icon {
+    width: 1.75em;
+    height: 1.75em;
+    margin-left: 1em;
+    font-size: 39px
+}
+
+.logo { 
+    width: 1.5x*1.17em;
+    height: 1.5em;
+    margin-right: 1em;
+    font-size: 39px
+}
