@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import axios from 'axios'
 import { Route, Routes } from 'react-router-dom'
 import Add_item from './components/Add_item'
+import Login from './components/Login'
 
 const App = () => {
   const [datag, setData] = useState([])
@@ -42,6 +43,7 @@ const App = () => {
         } 
       />
       <Route path='add_item' element={<Add_item/>} />
+      <Route path='login' element={<Login/>} />
     </Routes>
     </>
   )
