@@ -9,11 +9,15 @@ const Navbar = () => {
     <>
       <nav className="navbar main-nav">
         <img className="iconn" src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/zh4t4uwwxv8pmc5amkbp" />    
-        <div className="ml-auto">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
           {loc.pathname==='/add_item'? null :
-            <button className="btn" style={{backgroundColor: '#3ccc7c', color: 'white', marginRight: '0'}} onClick={()=>navigate('/add_item')}>Add Item</button>}
-        </div>
-        <img className="logo" src={img1} />
+                    <button className="btn add_item" onClick={()=>navigate('/add_item')}>Add Item</button>}
+          </li>
+          <li class="nav-item">
+          <img className="logo" src={img1} />
+          </li>
+        </ul>
         
       </nav>
     </>

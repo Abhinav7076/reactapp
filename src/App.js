@@ -19,7 +19,6 @@ const App = () => {
 
   
   function handleClick(tag){
-    console.log(tag)
     setTag(tag)
   }
 

@@ -13,8 +13,16 @@
 }
 
 .logo { 
-    width: 1.5x*1.17em;
-    height: 1.5em;
+    width: 1.125x*1.17em;
+    height: 1.125em;
     margin-right: 1em;
     font-size: 39px
+}
+
+.add_item {
+    background-color: #3ccc7c;
+    color: white;
+    position: relative;
+    top: 3px;
+    margin-right: 25px;
 }
