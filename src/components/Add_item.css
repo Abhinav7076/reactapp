@@ -1,0 +1,64 @@
+body {
+    padding: 0;
+    margin: 0;
+  }
+
+
+.fmx, select {
+  border-radius: 2px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+.lbx {
+    margin-bottom: 3px;
+    color: gray;
+}
+
+input[type=text], .bradius {
+    border-radius: 2px;
+}
+
+input[type=submit] {
+  background-color: #106cfc;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #1c74fc;
+}
+
+
+.split {
+    width: 50%;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .left {
+    left: 0;
+    background-color: #f4f4f4;
+    border: 1px;
+    padding: 100px;
+  }
+  
+  .right {
+    right: 0;
+    background-image: url(add_item.png);
+    background-size: 100%;
+  }
+  
+  .back{
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    color: grey;
+    text-decoration: none;
+  }

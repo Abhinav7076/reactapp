@@ -4,7 +4,6 @@ import Bar from './components/Bar'
 import Navbar from './components/Navbar'
 import axios from 'axios'
 import { Route, Routes } from 'react-router-dom'
-import { Button } from 'bootstrap'
 import Add_item from './components/Add_item'
 
 const App = () => {
@@ -15,7 +14,6 @@ const App = () => {
     axios.get('https://media-content.ccbp.in/website/react-assignment/resources.json')
     .then(res=>{
       setData(res.data)
-      console.log(datag)
     })
   }, [])
 
