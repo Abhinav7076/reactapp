@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reactapp/static/css/main.d52fab15.css",
-    "main.js": "/reactapp/static/js/main.00077639.js",
+    "main.js": "/reactapp/static/js/main.66b50184.js",
     "static/js/787.5480e000.chunk.js": "/reactapp/static/js/787.5480e000.chunk.js",
     "static/media/add_item.png": "/reactapp/static/media/add_item.03b45aa3dffcdfd72822.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/reactapp/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
@@ -12,11 +12,11 @@
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/reactapp/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "index.html": "/reactapp/index.html",
     "main.d52fab15.css.map": "/reactapp/static/css/main.d52fab15.css.map",
-    "main.00077639.js.map": "/reactapp/static/js/main.00077639.js.map",
+    "main.66b50184.js.map": "/reactapp/static/js/main.66b50184.js.map",
     "787.5480e000.chunk.js.map": "/reactapp/static/js/787.5480e000.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d52fab15.css",
-    "static/js/main.00077639.js"
+    "static/js/main.66b50184.js"
   ]
 }
