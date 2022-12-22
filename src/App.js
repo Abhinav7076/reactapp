@@ -10,6 +10,7 @@ import Login from './components/Login'
 const App = () => {
   const [datag, setData] = useState([])
   const [tag, setTag] = useState('resources')
+  const [search, setSearch] = useState('')
 
   useEffect(() => {
     axios.get('https://media-content.ccbp.in/website/react-assignment/resources.json')
@@ -18,6 +19,10 @@ const App = () => {
     })
   }, [])
 
+  const handleSearch = (event) =>{
+    console.log(event.target.value)
+    setSearch(event.target.value)
+  }
   
   function handleClick(tag){
     setTag(tag)
@@ -30,13 +35,23 @@ const App = () => {
         <>
             <Navbar /><hr /><br />
             <Bar changeTag={handleClick} /><div className="container mt-5 mb-3">
+            <div className="input-group mb-3">        
+            <input type="text" className="form-control" placeholder="Search..." aria-label="Username" aria-describedby="basic-addon1" onChange={handleSearch} />
+          </div>
             <div className="row">
-              {datag.map(element => {
+              {search.length === 0 ?
+              datag.map(element => {
                 if (tag === 'resources')
                   return <Card key={element.id} tag={element.tag} icon_url={element.icon_url} title={element.title} category={element.category} link={element.link} description={element.description} />
                 else if (element.tag === tag)
                   return <Card key={element.id} tag={element.tag} icon_url={element.icon_url} title={element.title} category={element.category} link={element.link} description={element.description} />
-              })}
+              })
+            :
+            datag.map(element => {
+              if ((element.title.toString().toLowerCase()).includes(search.toString().toLowerCase()))
+                return <Card key={element.id} tag={element.tag} icon_url={element.icon_url} title={element.title} category={element.category} link={element.link} description={element.description} />
+            })
+            }
             </div>
           </div>
         </>
