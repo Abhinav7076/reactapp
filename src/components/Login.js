@@ -82,7 +82,7 @@ const Login=()=>{
                 </div>
                 <form onSubmit={submitForm}>
                     <div className="input-text">
-                        <input type="text" className={` ${warnemail ? "warning" : "" }`} placeholder="Enter your email" value={inputtext.email} onChange={inputEvent} name="email" required />
+                        <input type="text" className={` ${warnemail ? "warning" : "" } inputtex`} placeholder="Enter your email" value={inputtext.email} onChange={inputEvent} name="email" required />
                         <i className="fa fa-envelope"></i>
     
                     </div>
